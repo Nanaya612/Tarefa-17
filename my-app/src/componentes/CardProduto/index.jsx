@@ -5,6 +5,7 @@ function CardProduto(){
     const [adicionadoCarrinho, setAddCarrinho] = useState(false)
     const adicionar = () => {
         setAddCarrinho(!adicionadoCarrinho)
+        console.log(adicionadoCarrinho)
     }
     const produtos = [
         {nome: 'Celular',
