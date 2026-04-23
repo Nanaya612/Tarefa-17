@@ -10,7 +10,7 @@ function CardProduto(){
     const produtos = [
         {nome: 'Celular',
         preço: '999 R$',
-        id: 1}
+        id: 1},
         ]
 
 return (
@@ -20,7 +20,7 @@ return (
             <Card key={p.id}>
                 <NomeProduto>{p.nome}</NomeProduto>
                 <PreçoProduto>{p.preço}</PreçoProduto>
-                <Botao $adicionada={adicionadoCarrinho} onClick={adicionar}>Adicionar ao Carrinho</Botao>
+                <Botao $adicionado={adicionadoCarrinho} onClick={adicionar}>{adicionadoCarrinho ? "Adicionado no Carrinho!" : "Adicionar no Carrinho"}</Botao>
             </Card>)}
         </Lista>
     </>
