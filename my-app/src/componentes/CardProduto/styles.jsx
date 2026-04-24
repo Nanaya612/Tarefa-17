@@ -33,7 +33,7 @@ color: white;
 font-size: 14px;
 cursor: pointer;
 &:hover {
-    background-color: ${({$adicionado}) => ($adicionado ? "#077a44;" : "#5e6266")};
+    background-color: ${({$adicionado}) => ($adicionado ? "#077a44" : "#5e6266")};
  }
 @media (max-width: 600px){
 font-size: 17px;

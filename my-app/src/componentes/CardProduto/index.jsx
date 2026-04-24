@@ -2,10 +2,10 @@ import { useState } from "react"
 import { Botao, Card, Lista, NomeProduto, PreçoProduto } from "./styles"
 
 function CardProduto(){
-    const [adicionadoCarrinho, setAddCarrinho] = useState(false)
+    const [adicionado, setAddCarrinho] = useState(false)
     const adicionar = () => {
-        setAddCarrinho(!adicionadoCarrinho)
-        console.log(adicionadoCarrinho)
+        setAddCarrinho(!adicionado)
+        console.log(adicionado)
     }
     const produtos = [
         {nome: 'Celular',
@@ -20,7 +20,7 @@ return (
             <Card key={p.id}>
                 <NomeProduto>{p.nome}</NomeProduto>
                 <PreçoProduto>{p.preço}</PreçoProduto>
-                <Botao $adicionado={adicionadoCarrinho} onClick={adicionar}>{adicionadoCarrinho ? "Adicionado no Carrinho!" : "Adicionar no Carrinho"}</Botao>
+                <Botao $adicionado={adicionado} onClick={adicionar}>{adicionado ? "Adicionado no Carrinho!" : "Adicionar no Carrinho"}</Botao>
             </Card>)}
         </Lista>
     </>
